@@ -1,4 +1,4 @@
-Open 10 starred articles of the shown articles in background tabs and unstar them!
+**For [tt-rss](http://tt-rss.org): Open 10 starred articles of the shown articles in background tabs and unstar them!**
 
 It simplifies this workflow: On a mobile tt-rss reader, I star articles which I want to read on my desktop later (it's mainly about scientific papers). On the desktop, I need to click each one of them and un-star, which is annoying.
 
