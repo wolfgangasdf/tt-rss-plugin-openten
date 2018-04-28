@@ -1,2 +1,23 @@
-cd /var/www/htdocs/tt-rss/plugins
-git clone git://github.com/mbirth/ttrss_plugin-af_feedmod.git plugins/af_feedmod
+Open 10 starred articles of the shown articles in background tabs and unstar them!
+
+It simplifies this workflow: On a mobile tt-rss reader, I star articles which I want to read on my desktop later (it's mainly about scientific papers). On the desktop, I need to click each one of them and un-star, which is annoying.
+
+# Installation
+```
+cd .../tt-rss/plugins
+git clone https://wolfgang@bitbucket.org/wolfgang/tt-rss-plugin-openten.git openten
+```
+
+Before using it, you must tell your browser to allow opening more than one popup windows from your tt-rss host.
+Either
+* Simply star only two articles and click `OpenTen`, the browser should offer to allow popups.
+* Add an exception to your browser settings
+    * Chrome: `chrome://settings/content/popups`
+
+
+# Update
+```
+cd .../tt-rss/plugins/openten
+git pull origin master
+```
+

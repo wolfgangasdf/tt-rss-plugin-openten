@@ -5,7 +5,7 @@ class Openten extends Plugin {
 
 	function about() {
 		return array(1.0,
-			"Add button to open 10 articles in tabs and unstar them.",
+			"Add menu to open 10 shown starred articles in tabs and unstar them.",
 			"wolfgang");
 	}
 
@@ -23,7 +23,7 @@ class Openten extends Plugin {
 		?>
 
 		<button dojoType="dijit.form.Button" onclick="openUnstarNext10()">
-			<?php echo __('Open ten articles') ?>
+			<?php echo __('OpenTen') ?>
 		</button>
 
 		<?php
