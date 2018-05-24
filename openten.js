@@ -6,12 +6,16 @@ function openUnstarNext10() {
 		var processed = 0;
 		children.each(function(child) {
 			var id = child.getAttribute("data-article-id");
-			console.log("id: " + id + " " + processed);
+			console.log("openten id: " + id + " " + processed);
 			if (child.hasClassName("marked")) { // only for starred articles!
 				//get the URL, open and toggle marked.
 				$$("#RTITLE-" + id + " > a").each(function(ahref){
-					console.log("XXX: " + ahref);
-					window.open(ahref, '_blank')
+					console.log("openten: " + ahref);
+					res = window.open(ahref, '_blank');
+					if (res == null) {
+						alert("Could not open (all) new browser windows, please allow this host to open new windows/popups in your browser settings!");
+						throw $break;
+					}
 					toggleMark(id, false);
 					processed++;
 				});
@@ -21,6 +25,6 @@ function openUnstarNext10() {
 
 
 	} catch (e) {
-		exception_error("shareArticle", e);
+		exception_error("openten", e);
 	}
 }
