@@ -7,7 +7,7 @@ later. On the desktop, I need to click each one of them and un-star, which is an
 
 ```
 cd .../tt-rss/plugins.local
-git clone https://bitbucket.org/wolfgang/tt-rss-plugin-openten.git openten
+git clone https://github.com/wolfgangasdf/tt-rss-plugin-openten.git openten
 ```
 
 After activating the plugin, OpenTen appears in the top menu bar. 
