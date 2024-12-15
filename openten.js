@@ -6,7 +6,7 @@ function openUnstarNext10() {
 	for (let child of children) {
 		var id = child.getAttribute("data-article-id");
 		console.log("openten: id: " + id + " processed: " + processed);
-		var ahref = document.querySelector("#RROW-" + id + " > div.header > span > a.title").href
+		var ahref = document.querySelector("#RROW-" + id + " > div.title > span > a.title").href
 		console.log("openten: open in background tab: " + ahref);
 		res = window.open(ahref, '_blank');
 		if (res == null) {
